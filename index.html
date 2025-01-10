@@ -164,34 +164,44 @@
         
     <div id="response-message" style="margin-top: 20px; display: none;"></div>
 
-    <script>
-        const form = document.getElementById('contact-form');
-        const responseMessage = document.getElementById('response-message');
+        <script>
+            const form = document.getElementById('contact-form');
+            const responseMessage = document.getElementById('response-message');
+            form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+            
+                const formData = new FormData(form);
+                const url = "https://script.google.com/macros/s/AKfycbz0jZRr2SbqL7-7gjlMdDavou4p_TZKHL26esx_ujvtmxZthcsDpqThUhbqaq_xRrs1/exec"; // Replace with your actual Google Apps Script URL
+            
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        body: formData,
+                    });
+            
+                    const result = await response.json();
+            
+                    responseMessage.style.display = 'block';
+                    responseMessage.style.color = result.status === 'success' ? 'green' : 'red';
+                    responseMessage.textContent = result.message;
+            
+                    if (result.status === 'success') {
+                        alert("Your message has been sent successfully!");
+                    }
+            
+                    form.reset(); 
+            
+                } catch (error) {
+                    responseMessage.style.display = 'block';
+                    responseMessage.style.color = 'red';
+                    responseMessage.textContent = 'An error occurred: ' + error.message;
+            
+                    alert("An error occurred: " + error.message);
+                }
+            });
+            
+        </script>
 
-        form.addEventListener('submit', async (event) => {
-            event.preventDefault();
-
-            const formData = new FormData(form);
-            const url = "https://script.google.com/macros/s/AKfycbz0jZRr2SbqL7-7gjlMdDavou4p_TZKHL26esx_ujvtmxZthcsDpqThUhbqaq_xRrs1/exec"; // Replace with your actual Google Apps Script URL
-
-            try {
-                const response = await fetch(url, {
-                    method: 'POST',
-                    body: formData,
-                });
-
-                const result = await response.json();
-
-                responseMessage.style.display = 'block';
-                responseMessage.style.color = result.status === 'success' ? 'green' : 'red';
-                responseMessage.textContent = result.message;
-            } catch (error) {
-                responseMessage.style.display = 'block';
-                responseMessage.style.color = 'red';
-                responseMessage.textContent = 'An error occurred: ' + error.message;
-            }
-        });
-    </script>
     <footer>
         <div class="footer-content">
             <!-- Navigation Links -->
