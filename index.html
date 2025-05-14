@@ -1,339 +1,24 @@
-<<<<<<< HEAD
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portfolio Website</title>
-        <link rel="stylesheet" href="css.css"> 
-        <script src="https://kit.fontawesome.com/29ded47674.js" crossorigin="anonymous"></script>
-        
-    </head>
-    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img  src="arasan1.JPG" >
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Service</a></li>
-                        <li><a href="#portfolio">Porject</a></li>
-                        <li><a href="#contact-form">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header-text">
-                    <p>CSE Student</p>
-                    <h1>Hello, I'm <span>Elavarasan</span><br> from Dharampuri.</h1>
-                </div>
-            </div>
-        </div>
-        <!--------------about-------------->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img  src="arasan1.JPG"  > 
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I'm Elavarasan from CSE background. Graduate at <b>Sri Eshwar</b> in batch of 2023-2027.
-                        Computer science education emphasizes problem-solving skills. 
-                        Students learn to break down complex problems into manageable parts and develop systematic solutions.
-                        This skill is valuable not only in programming but also in various aspects of life.</p>
-                            
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
-                            <p class="tab-links" onclick="opentab('Experience')">Experience </p>
-                            <p class="tab-links" onclick="opentab('education')">Education </p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                                <li><span>Web Development</span><br> Web/App Development</li>
-                                <li><span>App development</span><br>Building Android/iOS apps</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Experience">
-                            <ul>
-                                <li><span>C, HTML, CSS, JavaScript</span><br>Worked on it for 6 months</li>
-                                <li><span>Python, C++, Data Structure</span><br>Worked on it for 6 months</li>
-                                <li><span>Java, Database Management System, Design and Analysis of Algorithm</span><br>Worked on it for 6 months</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2020-2021</span><br>10th in Pachamuthu matric School, Dharmapuri.</li>
-                                <li><span>2022-2023</span><br>12th in Pachamuthu matric School, Dharmapuri.</li>
-                                <li><span>2023-2027</span><br>Sri Eshwar college of engineering, Coimbatore.</li>
-                            </ul>
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-------------------services-----------> 
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fas fa-code"></i>
-                        <h2>Web Design</h2>
-                        <p>Editing template for a website using HTML, CSS, JavaScript. Making posters in Canva. 
-                        Video editing in VN video editor app.
-                        </p>
-                        <a href="https://www.wix.com/website/design">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-square-xmark"></i>
-                        <h2>Problem Solving</h2>
-                        <p>Problem solving using C, C++, and sometimes in Python. 
-                        Participating in many workshops. Learning Data Structures in a short time.
-                        </p>
-                        <a href="https://leetcode.com/u/Elavarasan_P/">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-puzzle-piece"></i>
-                        <h2>Gaming</h2>
-                        <p>Playing games on mobile like PUBG, Candy Crush, Subway Surfer, and Hill Climbing on laptop.
-                        </p>
-                        <a href="https://en.wikipedia.org/wiki/Gaming">Learn more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-------------------portfolio-----------> 
-<div id="portfolio">
-     <div class="container">
-      <h1 class="sub-title">My <span>Work</span></h1>
-        <div class="work-list">
-            <div class="work">
-                <i class="fas fa-cogs"></i>
-                <h2>Project 1</h2>
-                <h4>Drone and Pilot Managing System</h4>
-                <p>This project aims to develop a system that manages and tracks drones using an object-oriented approach. The core of the project is the Drone class, which encapsulates various attributes related to a drone's identity and maintenance.</p>
-                <ul>
-                    <li>Updating the drone's last maintenance date.</li>
-                    <li>Tracking drone status (active/inactive).</li>
-                    <li>Integrating the drone class into a larger system for fleet management.</li>
-                </ul>
-                <a href="https://github.com/Isaiaarasan/Drone-and-Pilot-management-">View Project</a>
-            </div>
-
-            <div class="work">
-                <i class="fas fa-boxes"></i>
-                <h2>Project 2</h2>
-                <h4>Stock Management</h4>
-                <p>A Stock Management System designed to track and manage inventory in real-time, ensuring businesses avoid stockouts or overstocking.</p>
-                <ul>
-                    <li>Real-time Inventory Tracking.</li>
-                    <li>Automated Reordering.</li>
-                    <li>Reporting and Analytics.</li>
-                </ul>
-                <a href="https://github.com/Isaiaarasan/Stock-management-">View Project</a>
-            </div>
-
-            <div class="work">
-                <i class="fas fa-user-lock"></i>
-                <h2>Project 3</h2>
-                <h4>Log-Register</h4>
-                <p>A React.js based login and registration system with real-time validation and modular component structure for seamless authentication.</p>
-                <ul>
-                    <li>Form validation and authentication handling.</li>
-                    <li>Clean UI with reusable components.</li>
-                    <li>Responsive design for various devices.</li>
-                </ul>
-                <a href="https://github.com/Isaiaarasan/Log-Register">View Project</a>
-            </div>
-
-            <div class="work">
-                <i class="fas fa-seedling"></i>
-                <h2>Project 4</h2>
-                <h4>AI Plant Analyzer</h4>
-                <p>A web application that uses AI to help identify plant symptoms and potential diseases based on user inputs.</p>
-                <ul>
-                    <li>Interactive symptom input interface.</li>
-                    <li>AI logic for plant disease suggestions.</li>
-                    <li>Designed for gardeners and farmers.</li>
-                </ul>
-                <a href="https://github.com/Isaiaarasan/Ai-Plant-Analyze">View Project</a>
-            </div>
-
-            <div class="work">
-                <i class="fas fa-heartbeat"></i>
-                <h2>Project 5</h2>
-                <h4>Health Journal</h4>
-                <p>A React-based application that allows users to track health records and symptoms over time for personal monitoring and medical sharing.</p>
-                <ul>
-                    <li>Record and manage health history.</li>
-                    <li>User-friendly form and journal interface.</li>
-                    <li>Intended for personal and clinical use.</li>
-                </ul>
-                <a href="https://github.com/Isaiaarasan/Health-Journal--Project-3">View Project</a>
-            </div>
-
-            <div class="work">
-                <i class="fas fa-film"></i>
-                <h2>Project 6</h2>
-                <h4>Night Movie Planner</h4>
-                <p>A collaborative platform for planning group movie nights. Users can vote, suggest movies, and schedule watch times together.</p>
-                <ul>
-                    <li>Group voting and scheduling.</li>
-                    <li>Interactive and responsive UI.</li>
-                    <li>Built using modern React best practices.</li>
-                </ul>
-                <a href="https://github.com/Isaiaarasan/Night-Movie-Planner-p2">View Project</a>
-            </div>
-
-            <div class="work">
-                <i class="fas fa-address-book"></i>
-                <h2>Project 7</h2>
-                <h4>Contact Management System</h4>
-                <p>A Python-based CLI application to manage contacts with basic CRUD functionalities and persistent storage using files or database.</p>
-                <ul>
-                    <li>Add, update, delete, and search contacts.</li>
-                    <li>Persistent storage using CSV or SQLite.</li>
-                    <li>Simple and user-friendly interface.</li>
-                </ul>
-                <a href="https://github.com/Isaiaarasan/contact-management-system">View Project</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-        <!----------contact------------>
-        <div id="contact" class="contact-form">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <div class="input-box">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name">
-                </div>
-        
-                <div class="input-box">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email">
-                </div>
-        
-                <div class="input-box">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required placeholder="Write your message here" rows="4"></textarea>
-                </div>
-        
-                <div class="input-box">
-                    <button type="submit">Send Message</button>
-                </div>
-            </form>
-        </div>
-            
-        <div id="response-message" style="margin-top: 20px; display: none;"></div>
-
-        <script>
-            const form = document.getElementById('contact-form');
-            const responseMessage = document.getElementById('response-message');
-            form.addEventListener('submit', async (event) => {
-                event.preventDefault();
-            
-                const formData = new FormData(form);
-                const url = "https://script.google.com/macros/s/AKfycbz0jZRr2SbqL7-7gjlMdDavou4p_TZKHL26esx_ujvtmxZthcsDpqThUhbqaq_xRrs1/exec"; // Replace with your actual Google Apps Script URL
-            
-                try {
-                    const response = await fetch(url, {
-                        method: 'POST',
-                        body: formData,
-                    });
-            
-                    const result = await response.json();
-            
-                    responseMessage.style.display = 'block';
-                    responseMessage.style.color = result.status === 'success' ? 'green' : 'red';
-                    responseMessage.textContent = result.message;
-            
-                    if (result.status === 'success') {
-                        alert("Your message has been sent successfully!");
-                    }
-            
-                    form.reset(); 
-            
-                } catch (error) {
-                    responseMessage.style.display = 'block';
-                    responseMessage.style.color = 'red';
-                    responseMessage.textContent = 'An error occurred: ' + error.message;
-            
-                    alert("An error occurred: " + error.message);
-                }
-            });
-            
-        </script>
-        
-        <footer>
-            <div class="footer-content">
-                <!-- Navigation Links -->
-                
-                <!-- Social Media Links -->
-                <div class="social-links">
-                    <a href="https://www.instagram.com/_arasan_0_/"><i class='bx bxl-instagram-alt'></i></a>
-                    <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <!-- Add more social media links here -->
-                </div>
-                
-                <!-- Footer Bottom (Copyright) -->
-                <div class="footer-bottom">
-                    <p>&copy; 2025 <a href="#">Elavarasan_P</a>. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
-        
-        <script>
-            function opentab(tabName) {
-                const tabContents = document.querySelectorAll('.tab-contents');
-                const tabLinks = document.querySelectorAll('.tab-links');
-
-                tabContents.forEach(tabContent => {
-                    tabContent.classList.remove('active-tab');
-                });
-
-                tabLinks.forEach(tabLink => {
-                    tabLink.classList.remove('active-link');
-                });
-
-                document.getElementById(tabName).classList.add('active-tab');
-                event.currentTarget.classList.add('active-link');
-            }
-        </script>
-    
-
-    </body>
-    </html>
-=======
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arasan's Portfolio</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="css.css"> 
     <script src="https://kit.fontawesome.com/29ded47674.js" crossorigin="anonymous"></script>
+    
 </head>
 <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="logo.1.jpg" class="logo" id="logo">
+                <img  src="arasan1.JPG" >
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Service</a></li>
-                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#portfolio">Porject</a></li>
                     <li><a href="#contact-form">Contact</a></li>
                 </ul>
             </nav>
@@ -348,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="arasan1.JPG" > 
+                    <img  src="arasan1.JPG"  > 
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -397,7 +82,7 @@
                     <i class="fas fa-code"></i>
                     <h2>Web Design</h2>
                     <p>Editing template for a website using HTML, CSS, JavaScript. Making posters in Canva. 
-                       Video editing in VN video editor app.
+                    Video editing in VN video editor app.
                     </p>
                     <a href="https://www.wix.com/website/design">Learn more</a>
                 </div>
@@ -405,7 +90,7 @@
                     <i class="fa-solid fa-square-xmark"></i>
                     <h2>Problem Solving</h2>
                     <p>Problem solving using C, C++, and sometimes in Python. 
-                       Participating in many workshops. Learning Data Structures in a short time.
+                    Participating in many workshops. Learning Data Structures in a short time.
                     </p>
                     <a href="https://leetcode.com/u/Elavarasan_P/">Learn more</a>
                 </div>
@@ -421,141 +106,168 @@
     </div>
 
     <!-------------------portfolio-----------> 
-    <div id="portfolio">
+            <div class="work">
+            <i class="fas fa-boxes"></i>
+            <h2>Project 2</h2>
+            <h4>Stock Management</h4>
+            <p>A Stock Management System designed to track and manage inventory in real-time, ensuring businesses avoid stockouts or overstocking.</p>
+            <ul>
+                <li>Real-time Inventory Tracking.</li>
+                <li>Automated Reordering.</li>
+                <li>Reporting and Analytics.</li>
+            </ul>
+            <a href="https://github.com/Isaiaarasan/Stock-management-">View Project</a>
+        </div>
+
+        <div class="work">
+            <i class="fas fa-user-lock"></i>
+            <h2>Project 3</h2>
+            <h4>Log-Register</h4>
+            <p>A React.js based login and registration system with real-time validation and modular component structure for seamless authentication.</p>
+            <ul>
+                <li>Form validation and authentication handling.</li>
+                <li>Clean UI with reusable components.</li>
+                <li>Responsive design for various devices.</li>
+            </ul>
+            <a href="https://github.com/Isaiaarasan/Log-Register">View Project</a>
+        </div>
+
+        <div class="work">
+            <i class="fas fa-seedling"></i>
+            <h2>Project 4</h2>
+            <h4>AI Plant Analyzer</h4>
+            <p>A web application that uses AI to help identify plant symptoms and potential diseases based on user inputs.</p>
+            <ul>
+                <li>Interactive symptom input interface.</li>
+                <li>AI logic for plant disease suggestions.</li>
+                <li>Designed for gardeners and farmers.</li>
+            </ul>
+            <a href="https://github.com/Isaiaarasan/Ai-Plant-Analyze">View Project</a>
+        </div>
+
+        <div class="work">
+            <i class="fas fa-heartbeat"></i>
+            <h2>Project 5</h2>
+            <h4>Health Journal</h4>
+            <p>A React-based application that allows users to track health records and symptoms over time for personal monitoring and medical sharing.</p>
+            <ul>
+                <li>Record and manage health history.</li>
+                <li>User-friendly form and journal interface.</li>
+                <li>Intended for personal and clinical use.</li>
+            </ul>
+            <a href="https://github.com/Isaiaarasan/Health-Journal--Project-3">View Project</a>
+        </div>
+
+        <div class="work">
+            <i class="fas fa-film"></i>
+            <h2>Project 6</h2>
+            <h4>Night Movie Planner</h4>
+            <p>A collaborative platform for planning group movie nights. Users can vote, suggest movies, and schedule watch times together.</p>
+            <ul>
+                <li>Group voting and scheduling.</li>
+                <li>Interactive and responsive UI.</li>
+                <li>Built using modern React best practices.</li>
+            </ul>
+            <a href="https://github.com/Isaiaarasan/Night-Movie-Planner-p2">View Project</a>
+        </div>
+
+        <div class="work">
+            <i class="fas fa-address-book"></i>
+            <h2>Project 7</h2>
+            <h4>Contact Management System</h4>
+            <p>A Python-based CLI application to manage contacts with basic CRUD functionalities and persistent storage using files or database.</p>
+            <ul>
+                <li>Add, update, delete, and search contacts.</li>
+                <li>Persistent storage using CSV or SQLite.</li>
+                <li>Simple and user-friendly interface.</li>
+            </ul>
+            <a href="https://github.com/Isaiaarasan/contact-management-system">View Project</a>
+        </div>
+    </div>
+</div>
+
+    <!-------------------contact form-----------> 
+    <div id="contact-form">
         <div class="container">
-            <h1 class="sub-title" >My <span>Work</span></h1>
-            <div class="work-list">
-                <div class="work">
-                    <i class="fas fa-cogs"></i>
-                    <h2>Project 1</h2>
-                    <h4>Drone and Pilot Managing System</h4>
-                    <p>This project aims to develop a system that manages and tracks drones using an object-oriented approach. The core of the project is the Drone class, which encapsulates various attributes related to a drone's identity and maintenance.</p>
-                    <ul>
-                        <li>Updating the drone's last maintenance date.</li>
-                        <li>Tracking drone status (active/inactive).</li>
-                        <li>Integrating the drone class into a larger system for fleet management.</li>
-                    </ul>
-                    <a href="https://github.com/Isaiaarasan/Drone-and-Pilot-management-">View Project</a>
-                </div>
-                <div class="work">
-                    <i class="fas fa-cogs"></i>
-                    <h2>Project 2</h2>
-                    <h4>Stock Management</h4>
-                    <p>A Stock Management System is a software solution designed to track and manage the inventory of goods or products in real-time. It helps businesses efficiently manage their stock, monitor stock levels, and ensure timely reordering to avoid stockouts or overstocking.</p>
-                    <ul>
-                        <li>Real-time Inventory Tracking.</li>
-                        <li>Automated Reordering.</li>
-                        <li>Reporting and Analytics.</li>
-                    </ul>
-                    <a href="https://github.com/Isaiaarasan/Stock-management-">View Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!----------contact------------>
-    <div id="contact" class="contact-form">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <div class="input-box">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your name">
-            </div>
-    
-            <div class="input-box">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email">
-            </div>
-    
-            <div class="input-box">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required placeholder="Write your message here" rows="4"></textarea>
-            </div>
-    
-            <div class="input-box">
+            <h1 class="sub-title">Contact Me</h1>
+            <form action="https://formspree.io/f/xjvjvjjj" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="10" placeholder="Your Message"></textarea>
                 <button type="submit">Send Message</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-        
-    <div id="response-message" style="margin-top: 20px; display: none;"></div>
 
-        <script>
-            const form = document.getElementById('contact-form');
-            const responseMessage = document.getElementById('response-message');
-            form.addEventListener('submit', async (event) => {
-                event.preventDefault();
-            
-                const formData = new FormData(form);
-                const url = "https://script.google.com/macros/s/AKfycbz0jZRr2SbqL7-7gjlMdDavou4p_TZKHL26esx_ujvtmxZthcsDpqThUhbqaq_xRrs1/exec"; // Replace with your actual Google Apps Script URL
-            
-                try {
-                    const response = await fetch(url, {
-                        method: 'POST',
-                        body: formData,
-                    });
-            
-                    const result = await response.json();
-            
-                    responseMessage.style.display = 'block';
-                    responseMessage.style.color = result.status === 'success' ? 'green' : 'red';
-                    responseMessage.textContent = result.message;
-            
-                    if (result.status === 'success') {
-                        alert("Your message has been sent successfully!");
-                    }
-            
-                    form.reset(); 
-            
-                } catch (error) {
-                    responseMessage.style.display = 'block';
-                    responseMessage.style.color = 'red';
-                    responseMessage.textContent = 'An error occurred: ' + error.message;
-            
-                    alert("An error occurred: " + error.message);
-                }
-            });
-            
-        </script>
-
-    <footer>
-        <div class="footer-content">
-            <!-- Navigation Links -->
-            
-            <!-- Social Media Links -->
+    <!-------------------footer-----------> 
+    <div id="footer">
+        <div class="container">
+            <h1>Elavarasan</h1>
+            <p>Follow me on:</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/_arasan_0_/"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <!-- Add more social media links here -->
-            </div>
-            
-            <!-- Footer Bottom (Copyright) -->
-            <div class="footer-bottom">
-                <p>&copy; 2025 <a href="#">Elavarasan_P</a>. All Rights Reserved.</p>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
             </div>
         </div>
-    </footer>
-     
+    </div>
+
+    <!-------------------script-----------> 
+    <script src="script.js"></script>
     <script>
-        function opentab(tabName) {
-            const tabContents = document.querySelectorAll('.tab-contents');
-            const tabLinks = document.querySelectorAll('.tab-links');
+        function opentab(tabname) {
+            var i;
+            var x = document.getElementsByClassName("tab-contents");
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove("active-tab");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
 
-            tabContents.forEach(tabContent => {
-                tabContent.classList.remove('active-tab');
-            });
-
-            tabLinks.forEach(tabLink => {
-                tabLink.classList.remove('active-link');
-            });
-
-            document.getElementById(tabName).classList.add('active-tab');
-            event.currentTarget.classList.add('active-link');
+            var j;
+            var y = document.getElementsByClassName("tab-links");
+            for (j = 0; j < y.length; j++) {
+                y[j].classList.remove("active-link");
+            }
+            event.currentTarget.classList.add("active-link");
+        }
+        function openProject(projectName) {
+            var i;
+            var x = document.getElementsByClassName("work");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(projectName).style.display = "block";
+        }
+        function showAllProjects() {
+            var i;
+            var x = document.getElementsByClassName("work");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+        }
+        function showMoreProjects() {
+            var i;
+            var x = document.getElementsByClassName("work");
+            for (i = 0; i < x.length; i++) {
+                if (x[i].style.display === "none") {
+                    x[i].style.display = "block";
+                } else {
+                    x[i].style.display = "none";
+                }
+            }
+        }
+        function showLessProjects() {
+            var i;
+            var x = document.getElementsByClassName("work");
+            for (i = 0; i < x.length; i++) {
+                if (x[i].style.display === "block") {
+                    x[i].style.display = "none";
+                } else {
+                    x[i].style.display = "block";
+                }
+            }
         }
     </script>
-  
-
 </body>
-</html>
->>>>>>> 5db28346290cc891e03d5badeddfa0e8630063aa
+</html>     
